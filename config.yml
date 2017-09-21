@@ -1,0 +1,3 @@
+name: R.G
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
