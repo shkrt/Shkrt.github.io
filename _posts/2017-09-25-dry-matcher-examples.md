@@ -10,7 +10,8 @@ category: dry-rb
 The [dry-matcher][dry-matcher] is a part of so-called [dry-rb][dry-rb] libraries - set of ruby gems that are becoming more and more popular in
 open source community right now.
 
-The main purpose of dry-matcher is to provide possibility to perform pattern-matching in Ruby
+Dry-matcher can be used to provide possibility to perform pattern-matching in Ruby. As one of its creators Piotr Solnica said,
+"dry-matcher was extracted from dry-transaction as a low-level building block. It's not meant to be used as a first-class pattern matching library"
 
 Assuming we have some code, that interacts with api, where api response can indicate either success or failure -  we can
 pattern-match on the result of the response, and then perform some computations depending on the response. Conditional
