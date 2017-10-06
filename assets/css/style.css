@@ -482,6 +482,11 @@ footer {
 
 footer > p > small {
   color: #fff;
+  font-size: x-small;
+}
+
+header > p > small {
+  font-size: small;
 }
 
 @media print, screen and (max-width: 960px) {
