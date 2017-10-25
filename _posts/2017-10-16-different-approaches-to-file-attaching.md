@@ -2,7 +2,7 @@
 layout: default
 title:  "Different approaches to file attaching"
 date:   2017-10-16 18:39:41 +0300
-category: other
+category: ruby
 ---
 
 # Different approaches to file attaching

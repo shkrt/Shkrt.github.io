@@ -14,6 +14,8 @@ permalink: /tags/
 
 [How to describe issues in a clear way]({{ site.baseurl }}{% post_url 2017-09-25-dry-matcher-examples %})
 
-### Other
+### Ruby
 
 [Different approaches to file attaching]({{ site.baseurl }}{% post_url 2017-10-16-different-approaches-to-file-attaching %})
+
+[Simplest implementation of interactor]({{ site.baseurl }}{% post_url 2017-10-23-simplest-implementation-of-interactor.md %})
