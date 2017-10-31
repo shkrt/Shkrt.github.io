@@ -19,3 +19,6 @@ permalink: /tags/
 [Different approaches to file attaching]({{ site.baseurl }}{% post_url 2017-10-16-different-approaches-to-file-attaching %})
 
 [Simplest implementation of interactor]({{ site.baseurl }}{% post_url 2017-10-23-simplest-implementation-of-interactor %})
+
+[Building API with Roda and Sequel]({{ site.baseurl }}{% post_url 2017-10-30-building-api-with-roda-and-sequel %})
+
