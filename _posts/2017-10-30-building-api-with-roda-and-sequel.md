@@ -194,12 +194,8 @@ This is not yet implemented in the model, so let's add it:
 class Book < Sequel::Model
   class << self
     def paginate(page_no, page_size)
-      dataset.paginate(page_no, page_size)
-    end
-
-    def dataset
       ds = DB[:books]
-      ds.extension(:pagination)
+      ds.extension(:pagination).paginate(page_no, page_size)
     end
   end
 end
