@@ -70,7 +70,7 @@ class App < Roda
   route do |r|
     r.is 'books' do
       @books = Book.all
-      @books.map(&:values).to_json
+      @books.map(&:to_json)
     end
   end
 end
@@ -112,6 +112,7 @@ The model does not contain much code by now:
 {% highlight ruby %}
 # models/book.rb
 class Book < Sequel::Model
+  plugin :json_serializer
 end
 {% endhighlight %}
 
@@ -145,12 +146,12 @@ route do |r|
   r.is 'books' do
     r.get do
       page = r.params[:page] || 1
-      { books: Book.paginate(page, 20).map(&:values) }
+      { books: Book.paginate(page, 20).map(&:to_json) }
     end
 
     r.post do
       @book = Book.create(book_params(r))
-      { book: @book.values }
+      { book: @book.to_json }
     end
   end
 
@@ -162,12 +163,12 @@ route do |r|
     r.halt(404) unless @book
 
     r.get do
-      { book: @book.values }
+      { book: @book.to_json }
     end
 
     r.put do
       @book.update(book_params(r))
-      { book: @book.values }
+      { book: @book.to_json }
     end
 
     r.delete do
@@ -192,6 +193,7 @@ This is not yet implemented in the model, so let's add it:
 {% highlight ruby %}
 # models/book.rb
 class Book < Sequel::Model
+  #...
   class << self
     def paginate(page_no, page_size)
       ds = DB[:books]
