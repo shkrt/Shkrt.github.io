@@ -22,3 +22,5 @@ permalink: /tags/
 
 [Building API with Roda and Sequel]({{ site.baseurl }}{% post_url 2017-10-30-building-api-with-roda-and-sequel %})
 
+[Comparing Sequel and ActiveRecord]({{ site.baseurl }}{% post_url 2017-11-06-comparing-sequel-and-activerecord %})
+
