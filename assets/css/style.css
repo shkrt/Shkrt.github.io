@@ -168,6 +168,12 @@ code, pre {
   font-size:14px;
 }
 
+td > code, pre {
+  font-family: "Fira Code", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color:#232323;
+  font-size:14px;
+}
+
 pre {
   padding: 4px 12px;
   background: #2a2a2a;
@@ -186,7 +192,6 @@ table {
 }
 
 table {
-  border: 1px solid #ccc;
   margin-bottom: 32px;
   text-align: left;
 }
@@ -331,7 +336,6 @@ table {
 }
 
 table {
-  border: 1px solid #ccc;
   margin-bottom: 32px;
   text-align: left;
 }
@@ -341,13 +345,13 @@ th {
   font-size: 18px;
   font-weight: normal;
   padding: 10px;
-  background: #232323;
-  color: #2a2a2a;
+  color: #232323;
+  border: 1px solid #ccc;
 }
 
 td {
   padding: 10px;
-  background: #ccc;
+  border: 1px solid #ccc;
 }
 
 
