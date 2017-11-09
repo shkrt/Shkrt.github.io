@@ -144,3 +144,11 @@ As we see, Sequel's API offers very convenient interface for ordering, eager loa
 instead of ActiveRecord, you will have to use [sequel-rails](https://github.com/TalentBox/sequel-rails) gem. If you're not in need of full orm support, including generators, migrations, or if
 you just want to do some experiments in command line, you can inherit existing Rails models from Sequel::Model, and set up all associations from scratch. That way you can also migrate
 your application part by part, iteratively changing connected models to Sequel::Model.
+
+Suggested reading:
+
+[Sequel official documentation](http://sequel.jeremyevans.net/)
+
+[Ode to Sequel](https://twin.github.io/ode-to-sequel/)
+
+[Why you should stop using ActiveRecord and start using Sequel](https://mrbrdo.wordpress.com/2013/10/15/why-you-should-stop-using-activerecord-and-start-using-sequel/)
