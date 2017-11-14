@@ -2,7 +2,7 @@
 layout: default
 title:  "Simplest implementation of interactor"
 date:   2017-10-23 18:28:47 +0300
-category: ruby
+tags: ruby
 ---
 
 # Simplest implementation of interactor

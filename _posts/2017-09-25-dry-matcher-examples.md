@@ -2,7 +2,7 @@
 layout: default
 title:  "Dry-matcher usage example"
 date:   2017-09-25 12:25:54 +0300
-category: dry-rb
+tags: dry-rb
 ---
 
 # Dry-matcher usage example

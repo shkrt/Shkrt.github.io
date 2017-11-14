@@ -2,7 +2,7 @@
 layout: default
 title:  "Comparing Sequel and ActiveRecord"
 date:   2017-11-06 18:33:09 +0300
-category: ruby
+tags: ruby sequel activerecord
 ---
 
 # Comparing Sequel and ActiveRecord

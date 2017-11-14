@@ -4,15 +4,25 @@ title: Tags
 permalink: /tags/
 ---
 
+{% for item in site.tags %}
+###	{{ item[0] }}
+
+  {% for post in site.posts %}
+    {% if post.tags contains item[0] %}
+[{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
 ### Workflow
 
-[Dry-matcher usage examples]({{ site.baseurl }}{% post_url 2017-10-02-howto-describe-issues %})
+[Dry-matcher usage examples]({{ site.baseurl }}{% post_url 2017-09-25-dry-matcher-examples %})
 
 ### Dry-rb
 
 [Dependency inversion with dry-cintainer]({{ site.baseurl }}{% post_url 2017-10-09-dependency-inversion-with-dry-container %})
 
-[How to describe issues in a clear way]({{ site.baseurl }}{% post_url 2017-09-25-dry-matcher-examples %})
+[How to describe issues in a clear way]({{ site.baseurl }}{% post_url 2017-10-02-howto-describe-issues %})
 
 ### Ruby
 

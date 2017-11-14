@@ -2,7 +2,7 @@
 layout: default
 title:  "Refactoring Rails application with dry-validation"
 date:   2017-11-13 09:35:44 +0300
-category: rails
+tags: rails dry-rb refactoring
 ---
 
 # Refactoring Rails application with dry-validation
