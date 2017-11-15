@@ -4,6 +4,15 @@ layout: default
 
 {% for post in site.posts %}
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> [{{ post.category }}]</a></small></p>
+    <p>
+      <small>
+        <strong>{{ post.date | date: "%B %e, %Y" }}</strong>
+        [
+        {% for t in post.tags %}
+				<a href="/tag/{{ t }}"><code class="highligher-rouge"><nobr>{{ t }}</nobr></code>&nbsp;</a>
+        {% endfor %}
+        ]
+      </small>
+    </p>
 {% endfor %}
 
