@@ -1,0 +1,40 @@
+body {
+  background-color: #fdf6e3;
+  color: #2aa198;
+  font-family: 'VT323', monospace;
+  font-size: 3em;
+  padding: 0 5em;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.inset {
+  display: inline-block;
+}
+
+a {
+  color: #657b83;
+}
+
+a:hover {
+  color: #657b83;
+}
+
+a:visited {
+  color: #6c71c4;
+}
+
+a:active {
+  color: #657b83;
+}
+
+hr {
+    display: block;
+    height: 5px;
+    border: 0;
+    border-top: 6px dashed #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
