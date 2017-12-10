@@ -1,9 +1,10 @@
 body {
-  background-color: #fdf6e3;
-  color: #2aa198;
+  background-color: #282828;
+  color: #c2d6e6;
   font-family: 'VT323', monospace;
-  font-size: 3em;
-  padding: 0 5em;
+  font-size: 2.5em;
+  padding: 0 1em;
+  max-width: 50%;
 }
 
 .wrapper {
@@ -19,11 +20,11 @@ a {
 }
 
 a:hover {
-  color: #657b83;
+  color: #c8a0d1;
 }
 
 a:visited {
-  color: #6c71c4;
+  color: #9cd9f0;
 }
 
 a:active {
