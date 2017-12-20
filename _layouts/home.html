@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <p>
       <small>
@@ -15,4 +15,30 @@ layout: default
       </small>
     </p>
 {% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">&laquo;</a>
+  {% endif %}
+  {% for pg in (1..paginator.total_pages) %}
+    {% if paginator.page == pg %}
+      {% if pg == 1 %}
+        <a href="/blog/" class="active">{{ pg }}</a>
+      {% else %}
+        <a href="/blog/page{{ pg }}" class="active">{{ pg }}</a>
+      {% endif %}
+    {% else %}
+      {% if pg == 1 %}
+        <a href="/blog">{{ pg }}</a>
+      {% else %}
+        <a href="/blog/page{{ pg }}">{{ pg }}</a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">&raquo;</a>
+  {% endif %}
+</div>
+
 
