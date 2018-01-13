@@ -2,6 +2,7 @@
 layout: default
 title:  "Ruby Standard library: StringScanner"
 date:   2018-01-08 15:43:40 +0300
+comments: true
 tags: ruby
 ---
 
