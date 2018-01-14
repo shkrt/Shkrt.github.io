@@ -2,6 +2,7 @@
 layout: default
 title:  "ROM-rb overview"
 date:   2017-12-11 09:57:51 +0300
+comments: true
 tags: ruby
 ---
 

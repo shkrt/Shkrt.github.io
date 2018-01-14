@@ -2,6 +2,7 @@
 layout: default
 title:  "Pagination done right way"
 date:   2017-11-20 08:37:59 +0300
+comments: true
 tags: postgresql activerecord
 ---
 

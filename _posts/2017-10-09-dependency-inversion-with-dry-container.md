@@ -2,6 +2,7 @@
 layout: default
 title:  "Dependency inversion with dry-container"
 date:   2017-10-09 10:47:25 +0300
+comments: true
 tags: dry-rb solid
 ---
 

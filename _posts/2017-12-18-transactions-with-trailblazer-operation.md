@@ -2,6 +2,7 @@
 layout: default
 title:  "Transactions with Trailblazer::Operation"
 date:   2017-12-18 20:48:26 +0300
+comments: true
 tags: ruby trailblazer
 ---
 
