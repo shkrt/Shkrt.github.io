@@ -2,6 +2,7 @@
 layout: default
 title:  "Another post on PostgreSQL window functions"
 date:   2017-11-27 17:25:13 +0300
+comments: true
 tags: postgresql
 ---
 

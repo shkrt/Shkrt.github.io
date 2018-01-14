@@ -2,6 +2,7 @@
 layout: default
 title:  " How to describe issues in a clear way"
 date:   2017-10-02 13:27:12 +0300
+comments: true
 tags: workflow
 ---
 

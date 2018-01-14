@@ -2,6 +2,7 @@
 layout: default
 title:  "Differences between RSpec doubles, spies and stubs"
 date:   2017-12-25 21:18:27 +0300
+comments: true
 tags: ruby rspec
 ---
 

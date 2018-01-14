@@ -2,6 +2,7 @@
 layout: default
 title:  "Building API with Roda and Sequel"
 date:   2017-10-30 18:33:09 +0300
+comments: true
 tags: ruby roda sequel
 ---
 

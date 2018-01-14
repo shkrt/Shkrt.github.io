@@ -2,6 +2,7 @@
 layout: default
 title:  "Postgresql lateral joins"
 date:   2017-12-04 22:57:21 +0300
+comments: true
 tags: postgresql
 ---
 
