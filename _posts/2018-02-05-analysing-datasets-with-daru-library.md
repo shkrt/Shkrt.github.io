@@ -28,7 +28,7 @@ df = Daru::DataFrame.from_csv('Demographic_Statistics_By_Zip_Code.csv')
 {% endhighlight %}
 
 After typing this in pry console, you should see the output, which is basically the representation of a newly created
-`Daru::DataFrame` object, containing dataset's data, but it's not of any help at its current state, so we should print put
+`Daru::DataFrame` object, containing dataset's data, but it's not of any help at its current state, so we should print out
 available summary info of this dataframe:
 
 {% highlight ruby %}
