@@ -36,7 +36,7 @@ Here are the steps to refactor:
 
 My credits to Arkency's Andrzej Krzywda, because I got some ideas from his brilliant
 [Fearless Refactoring: Rails Controllers](http://rails-refactoring.com/) book, and to Ivan Shamatov, which has written
-[this](https://mkdev.me/posts/kak-ispolzovat-query-objects-dlya-refaktoringa-sql-zaprosov-rails) inspiring article in Russian.
+[this](https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries) inspiring article.
 
 Let's start with example controller:
 
