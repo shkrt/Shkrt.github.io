@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruslan Gafurov - Ruby on Rails Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5px;
+    line-height: 1.28;
+    color: #444;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 11mm 13.5mm 10mm;
+    margin: 0 auto;
+  }
+
+  /* ---------- Header ---------- */
+  .header {
+    width: 100%;
+    margin-bottom: 23px;
+    background: transparent;
+    display: table;
+    table-layout: fixed;
+  }
+
+  .header-left {
+    display: table-cell;
+    width: auto;
+    vertical-align: top;
+    padding: 0 18px 0 0;
+  }
+
+  .header-left h1 {
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .header-left .subtitle {
+    color: #0785ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.15;
+    letter-spacing: 0;
+    font-weight: 700;
+    text-transform: none;
+    margin-bottom: 7px;
+  }
+
+  .header-contact {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9.8px;
+    line-height: 1.35;
+    color: #444;
+  }
+
+  .header-contact table {
+    border-collapse: collapse;
+    width: auto;
+  }
+
+  .header-contact table td {
+    padding: 0 14px 0 0;
+    white-space: nowrap;
+  }
+
+  .header-contact table td:first-child {
+    color: #0785ff;
+    font-weight: 700;
+    padding-right: 3px;
+  }
+
+  .header-contact a {
+    color: #444;
+    text-decoration: none;
+  }
+
+  .header-right {
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+    padding: 0;
+  }
+
+  .header-photo {
+    display: block;
+    width: 118px;
+    height: 118px;
+    margin-left: auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+    /* ---------- Two-column body ---------- */
+  .resume-columns {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .left-column,
+  .right-column {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .left-column {
+    width: 57%;
+    padding-right: 27px;
+  }
+
+  .right-column {
+    width: 43%;
+    padding-left: 0;
+  }
+
+  /* ---------- Section headings ---------- */
+  .section-title,
+  .footer-section-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #111;
+    padding: 0 0 5px;
+    border-bottom: 3px solid #111;
+    margin: 0 0 9px;
+  }
+
+  .section-title span {
+    color: #0785ff;
+  }
+
+  .summary {
+    font-size: 10.5px;
+    line-height: 1.32;
+    color: #555;
+    padding: 0;
+    margin-bottom: 28px;
+  }
+
+  /* ---------- Skills ---------- */
+  .skills-container {
+    margin: 0 0 28px;
+  }
+
+  .skills-category {
+    margin-bottom: 6px;
+  }
+
+  .skills-category-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #0785ff;
+    margin-bottom: 4px;
+  }
+
+  .skills-list {
+    line-height: 1.35;
+  }
+
+  .skill-tag {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    padding: 0;
+    font-size: 10.5px;
+    color: #555;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .skill-tag:not(:last-child)::after {
+    content: ", ";
+  }
+
+  /* ---------- Experience ---------- */
+  .job {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+    page-break-inside: auto;
+  }
+
+  .job:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .job-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11.5px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 3px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+
+  .job-header .date {
+    color: #555;
+    font-weight: 400;
+  }
+
+  .job-header .role {
+    color: #111;
+  }
+
+  .job-header .company {
+    color: #0785ff;
+    font-weight: 700;
+  }
+
+  .job-header a {
+    color: #0785ff;
+    text-decoration: none;
+  }
+
+  .job-body {
+    padding: 0;
+  }
+
+  .job-detail {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .job-detail-label {
+    display: none;
+  }
+
+  .job-detail-value {
+    display: block;
+    font-size: 10.2px;
+    color: #555;
+    line-height: 1.3;
+    margin-bottom: 2px;
+  }
+
+  .job-detail-value ul {
+    margin: 2px 0 0 15px;
+    padding: 0;
+  }
+
+  .job-detail-value ul li {
+    margin-bottom: 1px;
+    padding-left: 1px;
+  }
+
+  .job-detail-value a {
+    color: #0785ff;
+    text-decoration: none;
+    border: 0;
+  }
+
+  /* Hide labels that were only useful in the original layout;
+     their values remain as compact descriptive lines. */
+  .job-detail-label + .job-detail-value {
+    margin-top: 0;
+  }
+
+  /* ---------- Bottom sections ---------- */
+  .footer-row {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+  }
+
+  .footer-col {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 18px;
+  }
+
+  .footer-section-title {
+    margin-bottom: 9px;
+  }
+
+  .footer-value {
+    font-size: 10.5px;
+    line-height: 1.35;
+    color: #555;
+  }
+
+  /* ---------- Reference-PDF-like achievements/projects ---------- */
+  .achievement,
+  .project {
+    margin-bottom: 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px dashed #ccc;
+  }
+
+  .achievement:last-child,
+  .project:last-child {
+    border-bottom: 0;
+  }
+
+  .achievement-title,
+  .project-title {
+    font-size: 11.2px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 2px;
+  }
+
+  .achievement-title::before {
+    content: "◆";
+    color: #0785ff;
+    font-size: 8px;
+    margin-right: 7px;
+    vertical-align: 1px;
+  }
+
+  .project-meta {
+    font-size: 9.5px;
+    color: #666;
+    margin-bottom: 3px;
+  }
+
+  .project p {
+    font-size: 10px;
+    line-height: 1.3;
+    color: #555;
+  }
+
+  .project ul {
+    margin: 3px 0 0 15px;
+    padding: 0;
+  }
+
+  .project li {
+    font-size: 10px;
+    margin-bottom: 1px;
+  }
+
+  .right-section {
+    margin-bottom: 27px;
+  }
+
+  .right-section:last-child {
+    margin-bottom: 0;
+  }
+
+  @media print {
+    .page {
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="header">
+    <div class="header-left">
+      <h1>RUSLAN GAFUROV</h1>
+      <div class="subtitle">Senior Backend Engineer – Ruby on Rails, E-commerce</div>
+      <div class="header-contact">
+        <table>
+          <tr><td>☎</td><td><a href="mailto:shkrt.contact@gmail.com">shkrt.contact@gmail.com</a></td></tr>
+          <tr><td>↗</td><td><a href="https://github.com/shkrt">github.com/shkrt</a></td></tr>
+          <tr><td>↗</td><td><a href="https://linkedin.com/in/gafur-me">linkedin.com/in/gafur-me</a></td></tr>
+          <tr><td>⌂</td><td><a href="https://gafur.me">gafur.me</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <img class="header-photo" src="av.png" alt="Ruslan Gafurov">
+    </div>
+  </header>
+
+  <div class="resume-columns">
+
+    <!-- LEFT COLUMN -->
+    <main class="left-column">
+      <div class="section-title">Experience</div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="role">Full Stack Developer</span>&ensp;at&ensp;<span class="company">Jiffy.com</span>
+        </div>
+        <div class="job-body">
+          <div class="job-detail">
+            <span class="job-detail-value"><span class="job-detail-label">Date</span>May 2018 — Present</span>
+          </div>
+          <div class="job-detail">
+            <span class="job-detail-value">E-commerce — custom apparel platform</span>
+          </div>
+          <div class="job-detail">
+            <span class="job-detail-value">
+              <ul>
+                <li>Built backend and SPA features for a new marketplace <a href="https://jiffy.com/custom-printed-shirts">jiffy.com/custom-printed-shirts</a></li>
+                <li>Delivered third-party integrations and features for the core e-commerce app <a href="https://jiffy.com">jiffy.com</a></li>
+                <li>Built multiple custom shirt marketplaces on the existing e-commerce engine</li>
+                <li>Developed a t-shirt mockup application</li>
+                <li>Created a digital assets marketplace</li>
+                <li>Managed production infrastructure during the pre-Kubernetes era</li>
+                <li>Migrated part of production infrastructure to AWS ECS</li>
+                <li>Migrated payment provider from Stripe to Braintree with zero downtime</li>
+                <li>Owned the fulfillment and logistics domain for a year</li>
+                <li>Owned the search engine domain for a year</li>
+                <li>Developed a shopping chatbot using vector embeddings and retrieval-augmented generation</li>
+                <li>Developed a slot-based direct-to-film printer capacity management system</li>
+              </ul>
+            </span>
+          </div>
+          <div class="job-detail"><span class="job-detail-value">Complexity, fast-paced business, high pressure</span></div>
+          <div class="job-detail"><span class="job-detail-value">Rails, PostgreSQL, Elasticsearch, AWS, Kubernetes, Python</span></div>
+          <div class="job-detail"><span class="job-detail-value">Tech team of ~100 people</span></div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="role">Backend Developer</span>&ensp;at&ensp;<a href="https://1mi.com" class="company">1MI</a>
+        </div>
+        <div class="job-body">
+          <div class="job-detail"><span class="job-detail-value">Apr 2016 — May 2018</span></div>
+          <div class="job-detail"><span class="job-detail-value">Media — national holding company with 50M+ monthly views and 700K+ social media subscribers</span></div>
+          <div class="job-detail">
+            <span class="job-detail-value">
+              <ul>
+                <li>Multi-tenant news engine powering 13 websites (<a href="https://vostokmedia.com">vostokmedia.com</a>, <a href="https://newizv.ru">newizv.ru</a>, and others)</li>
+                <li>Entertainment and lifestyle web/mobile application <a href="https://likes.ru">likes.ru</a></li>
+                <li>Mobile applications for the news portals</li>
+                <li>Social network mobile application</li>
+              </ul>
+            </span>
+          </div>
+          <div class="job-detail"><span class="job-detail-value">High-traffic application under constant load</span></div>
+          <div class="job-detail"><span class="job-detail-value">Rails, PostgreSQL, WebSockets, Elasticsearch, Slim, Scss, Capistrano, Chef, RSpec</span></div>
+          <div class="job-detail"><span class="job-detail-value">8–10 people: lead, devops, frontend, backend, mobile</span></div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="role">Freelance Ruby Developer</span>
+        </div>
+        <div class="job-body">
+          <div class="job-detail"><span class="job-detail-value">Mar 2017 — Dec 2017</span></div>
+          <div class="job-detail">
+            <span class="job-detail-value">
+              <ul>
+                <li>Open-source contribution to <a href="https://github.com/test-prof/test-prof">test-prof/test-prof</a></li>
+                <li>Election process monitoring web application</li>
+                <li>Car parking automation web application</li>
+                <li>Various smaller web applications</li>
+              </ul>
+            </span>
+          </div>
+          <div class="job-detail"><span class="job-detail-value">Rails 4, MySQL, Sidekiq, Redis, jQuery, Slim, Scss, RSpec, Capistrano</span></div>
+          <div class="job-detail"><span class="job-detail-value">5–7 people: lead, devops, frontend, backend, mobile</span></div>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top: 24px;">Education</div>
+      <div class="job" style="border-bottom: 0;">
+        <div class="job-header">Kazan State Energy University</div>
+        <div class="job-body">
+          <div class="job-detail"><span class="job-detail-value">2002 — 2008 · Bachelor's Degree</span></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT COLUMN -->
+    <aside class="right-column">
+
+      <section class="right-section">
+        <div class="section-title">Summary</div>
+        <p class="summary" style="margin-bottom:0;">
+          Senior Backend Engineer with 10+ years of experience, specializing in Ruby on Rails for high-traffic e-commerce and media platforms. Thrived in one of the most demanding environments, where critical parts of the application are frequently rewritten under pressure and every decision has a significant impact on the business. Business-first mindset with full end-to-end ownership of work.
+        </p>
+      </section>
+
+      <section class="right-section">
+        <div class="section-title">Key Achievements</div>
+
+        <div class="achievement">
+          <div class="achievement-title">E-commerce Platform Delivery</div>
+          <div>Built backend and marketplace capabilities across a custom apparel e-commerce platform.</div>
+        </div>
+
+        <div class="achievement">
+          <div class="achievement-title">Payment Migration</div>
+          <div>Migrated payment infrastructure from Stripe to Braintree with zero downtime.</div>
+        </div>
+
+        <div class="achievement">
+          <div class="achievement-title">Search &amp; Fulfillment Ownership</div>
+          <div>Owned search and fulfillment/logistics domains, including high-traffic production systems.</div>
+        </div>
+
+        <div class="achievement">
+          <div class="achievement-title">LLMs</div>
+          <div>Built a shopping chatbot using vector embeddings and retrieval-augmented generation.</div>
+        </div>
+      </section>
+
+      <section class="right-section">
+        <div class="section-title">Skills</div>
+        <div class="skills-container">
+          <div class="skills-category">
+            <div class="skills-category-label">Languages &amp; Frameworks</div>
+            <div class="skills-list">
+              <span class="skill-tag">Ruby</span>
+              <span class="skill-tag">Rails</span>
+              <span class="skill-tag">Hanami</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">VueJS</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <div class="skills-category-label">Infrastructure &amp; Data</div>
+            <div class="skills-list">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Elasticsearch</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Ansible</span>
+              <span class="skill-tag">Chef</span>
+              <span class="skill-tag">Terraform</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <div class="skills-category-label">Practices &amp; Tools</div>
+            <div class="skills-list">
+              <span class="skill-tag">TDD</span>
+              <span class="skill-tag">RSpec</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Refactoring</span>
+              <span class="skill-tag">Code Review</span>
+              <span class="skill-tag">API Design</span>
+              <span class="skill-tag">E-Commerce</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Vim</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <div class="skills-category-label">Applied AI</div>
+            <div class="skills-list">
+              <span class="skill-tag">Cursor</span>
+              <span class="skill-tag">Claude</span>
+              <span class="skill-tag">Agentic AI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="right-section">
+        <div class="section-title">Projects</div>
+
+        <div class="project">
+          <div class="project-title">Test Prof</div>
+          <div class="project-meta">Open-source contribution</div>
+          <p>Contributed to <a href="https://github.com/test-prof/test-prof" style="color:#0785ff;text-decoration:none;">test-prof/test-prof</a>.</p>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Shopping Chatbot</div>
+          <div class="project-meta">AI / E-commerce</div>
+          <p>Developed a shopping chatbot using vector embeddings and retrieval-augmented generation.</p>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Printer Capacity Management</div>
+          <div class="project-meta">E-commerce / Operations</div>
+          <p>Developed a slot-based direct-to-film printer capacity management system.</p>
+        </div>
+      </section>
+
+      <section class="right-section">
+        <div class="section-title">Languages</div>
+        <p class="footer-value">English (C2), Russian</p>
+      </section>
+
+    </aside>
+  </div>
+</div>
+</body>
+</html>
